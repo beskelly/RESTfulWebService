@@ -45,7 +45,7 @@ app.use((req, res, next) => {
 });
 
 // endpoint to Get all todo
-app.get('/comments', (req, res) => {
+app.get('/todos', (req, res) => {
   db.collection(collName).find({}).toArray(function(err, result) {
     if (err) throw err;
     //console.log(result);
